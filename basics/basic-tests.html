@@ -7,43 +7,55 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <ul>
-      <li><a href="../index.html" title="Link to the main page">Home</a></li>
-      <li><a href="japanese.html" title="Link to the japanese translation">Japanese Page</a></li>
-      <li><a href="french.html" title="Link to the french translation">French Page</a></li>
-      <li><strong>HTML Tests</strong></li>
-    </ul>
-    <h1>Simple tests of HTML concepts</h1>
-    <h2>An example description list</h2>
-    <dl>    
-      <dt>Bacon</dt>
-      <dd>The glue that binds the world together.</dd>
-      <dt>Eggs</dt>
-      <dd>The glue that binds the cake together.</dd>
-      <dt>Coffee</dt>
-      <dd>The drink that gets the world running in the morning.</dd>
-      <dd>A light brown color.</dd>
-    </dl>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html" title="Link to the main page">Home</a></li>
+          <li><a href="japanese.html" title="Link to the japanese translation">Japanese Page</a></li>
+          <li><a href="french.html" title="Link to the french translation">French Page</a></li>
+          <li><strong>HTML Tests</strong></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Simple tests of HTML concepts</h1>
+      <section>
+        <h2>An example description list</h2>
+        <dl>    
+          <dt>Bacon</dt>
+          <dd>The glue that binds the world together.</dd>
+          <dt>Eggs</dt>
+          <dd>The glue that binds the cake together.</dd>
+          <dt>Coffee</dt>
+          <dd>The drink that gets the world running in the morning.</dd>
+          <dd>A light brown color.</dd>
+        </dl>
+      </section>
+      
+      <hr>
+      
+      <section>
+        <h2>A simple quotation example</h2>
+        <p>Hello and welcome to my motivation page. As <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>Confucius' quotes site</cite></a> says:</p>
+        <blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+            <p>It does not matter how slowly you go as long as you do not stop.</p></blockquote>
+        <p>I also love the concept of positive thinking, and 
+          <q cite="http://example.com/affirmationsforpositivethinking">The Need To Eliminate Negative Self Talk</q> 
+          (as mentioned in <a href="http://example.com/affirmationsforpositivethinking"><cite>Affirmations for Positive Thinking</cite></a>.)</p>
+      </section>
 
-    <hr>
-    
-    <h2>A simple quotation example</h2>
-    <p>Hello and welcome to my motivation page. As <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>Confucius' quotes site</cite></a> says:</p>
-    <blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
-        <p>It does not matter how slowly you go as long as you do not stop.</p></blockquote>
-    <p>I also love the concept of positive thinking, and 
-      <q cite="http://example.com/affirmationsforpositivethinking">The Need To Eliminate Negative Self Talk</q> 
-      (as mentioned in <a href="http://example.com/affirmationsforpositivethinking"><cite>Affirmations for Positive Thinking</cite></a>.)</p>
+      <hr>
+  
+      <section>
+        <h2>Acronyms example</h2>
+        <p><abbr title="National Aeronautics and Space Administration"> NASA</abbr> sure does some exciting work.</p>
+      </section>
 
-    <hr>
-
-    <h2>Acronyms example</h2>
-    <p><abbr title="National Aeronautics and Space Administration"> NASA</abbr> sure does some exciting work.</p>
-
-    <hr>
-
-    <h2>Advanced text semantics test</h2>
-
+      <hr>
+  
+      <section> 
+        <h2>Advanced text semantics test</h2>
+  
         <p>Let's start with a quote:</p>
 
         <p><blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/Accessibility">By default, 
@@ -57,16 +69,46 @@
         <time datetime="2019-11-2">November 2<sup>nd</sup> 2019</time> (Día de los Muertos).</p>
       </section>
 
+      <hr>
+  
+      <section>
+        <h2>Marking up a letter</h2>
+  
+        <p><a href="letter.html" target="_blank">The Letter</a></p>
+      </section>
+
+      <hr>
+  
+      <section>
+        <h2>Structuring a website</h2>
+      
+        <p><a href="../exercise/index.html" target="_blank">The Website</a></p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Example adding an image (hotlinking bad)</h2>
+          <figure>
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+            alt="A random image from the MDN HTML course" 
+            width="200" 
+            height="171" 
+            title="A random image from the MDN HTML course!!!">
+            <figcaption>The crazy ass skeleton from a T-Rex</figcaption>
+          </figure>
+      </section>
+
+    </main>
+
     <hr>
-
-    <h2>Marking up a letter</h2>
-
-    <p><a href="letter.html" target="_blank">The Letter</a></p>
-
     <hr>
-
-    <h2>Structuring a website</h2>
     
-    <p><a href="../exercise/index.html" target="_blank">The Website</a></p>
+    <footer>
+      <p>This test website example is CC0 — any part of this code may be reused in any way you wish. Original test web written by David Caminal, 2021.</p>
+
+      <p>David Caminal's <a href="../pdfs/CV_David_Caminal-en.pdf" title="Link to my CV" target="_blank">Curriculum Vitae</a></p>
+    </footer>
+
     
   </body>

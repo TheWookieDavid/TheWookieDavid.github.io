@@ -5,6 +5,7 @@
     <title>Small HTML Tests</title>
     <link rel="Shortcut Icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
+    <style> iframe { border: none } </style>
   </head>
   <body>
     <header>
@@ -119,6 +120,19 @@
           <source src="../audio/viper.ogg" type="audio/ogg">
           <p>Your browser doesn't support HTML5 audio. Here is a <a href="../audio/viper.mp3">link to the audio</a> instead.</p>
         </audio>        
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Example adding an iframe</h2>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/XLWFgjl_ICU" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <p>Your browser doesn't support this type of content. Here is a <a href="https://www.youtube.com/embed/XLWFgjl_ICU">link to the video</a> instead.</p>
+        </iframe>      
       </section>
 
     </main>
